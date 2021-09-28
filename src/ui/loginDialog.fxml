@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.ButtonType?>
+<?import javafx.scene.control.DialogPane?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<DialogPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="252.0" prefWidth="480.0" styleClass="login-background" stylesheets="@stylesheets/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.LoginDialog">
+    <header>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="206.0" prefWidth="480.0" styleClass="log-pane">
+         <children>
+            <TextField fx:id="userField" layoutX="125.0" layoutY="90.0" />
+            <Text layoutX="23.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="log-text" text="Username" />
+            <Text layoutX="23.0" layoutY="164.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="log-text" text="Password" />
+            <PasswordField fx:id="passwordField" layoutX="125.0" layoutY="144.0" />
+            <Text layoutX="23.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="log-title" text="Login Area">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Text>
+         </children></AnchorPane>
+    </header>
+    <expandableContent>
+      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="200.0" prefWidth="320.0" />
+    </expandableContent>
+   <buttonTypes>
+      <ButtonType fx:constant="APPLY" />
+   </buttonTypes>
+</DialogPane>

@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane prefHeight="160.0" prefWidth="1075.0" styleClass="task-background" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.task.ViewTask">
+   <children>
+      <VBox prefHeight="400.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <HBox prefHeight="40.0" prefWidth="600.0">
+               <children>
+                  <Text fx:id="cookingProcedureName" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="Nome Procedura Di Cucina">
+                     <font>
+                        <Font name="Arial" size="36.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="TACc">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="30.0" top="30.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="tacc" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="xx">
+                     <HBox.margin>
+                        <Insets left="10.0" top="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="TACv">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="30.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="tacv" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="xx">
+                     <HBox.margin>
+                        <Insets left="10.0" top="30.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="TUc">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" top="30.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="tuc" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="xx">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="30.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="TUv">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="30.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="tuv" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="xx">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="30.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="TT">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="50.0" top="30.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="tt" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="xx">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="10.0" top="30.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <Line endX="1080.0" />
+            <HBox prefHeight="48.0" prefWidth="601.0">
+               <children>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="Tempo Stimato:">
+                     <HBox.margin>
+                        <Insets left="10.0" top="15.0" />
+                     </HBox.margin>
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="timeRequested" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="0">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="Cuoco:">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="cook" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="N/A">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="Turno di Cucina:">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="cookingTurn" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="N/A">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="Dosi da Preparare:">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="dosesNeeded" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="N/A">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="Dosi già Preparate:">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="20.0" top="15.0" />
+                     </HBox.margin>
+                  </Text>
+                  <Text fx:id="dosesPrepared" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="task-text" text="N/A">
+                     <font>
+                        <Font name="Arial" size="14.0" />
+                     </font>
+                     <HBox.margin>
+                        <Insets left="5.0" top="15.0" />
+                     </HBox.margin>
+                  </Text>
+               </children>
+            </HBox>
+            <HBox prefHeight="26.0" prefWidth="603.0">
+               <children>
+                  <Button fx:id="timeBtn" mnemonicParsing="false" onAction="#assignTimeRequested" text="+ Tempo">
+                     <HBox.margin>
+                        <Insets left="280.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="cookBtn" mnemonicParsing="false" onAction="#assignCook" text="+ Cuoco">
+                     <HBox.margin>
+                        <Insets left="15.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="turnBtn" mnemonicParsing="false" onAction="#assignCookingTurn" text="+ Turno">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="dosesNeededBtn" mnemonicParsing="false" onAction="#assignDosesNeeded" text="+ Dosi da P.">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="dosesPreparedBtn" mnemonicParsing="false" onAction="#assignDosesPrepared" text="+ Dosi già P.">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="deleteAssignmentsBtn" mnemonicParsing="false" onAction="#deleteAllAssignments" text="- Assegnamenti">
+                     <HBox.margin>
+                        <Insets left="25.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

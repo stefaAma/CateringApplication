@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.shape.Line?>
+
+<BorderPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="620.0" prefWidth="1080.0" styleClass="task-background" stylesheets="@../stylesheets/style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="ui.task.ViewTaskSummary">
+    <center>
+        <fx:include fx:id="viewTaskPane" source="view-task.fxml" />
+    </center>
+   <bottom>
+      <VBox BorderPane.alignment="CENTER">
+         <children>
+            <Line endX="1080.0" strokeWidth="5.0">
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </Line>
+            <HBox prefHeight="50.0" prefWidth="598.0" styleClass="task-background">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#createTask" text="+">
+                     <HBox.margin>
+                        <Insets left="320.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="removeTaskBtn" mnemonicParsing="false" onAction="#removeTask" text=" - ">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="upBtn" mnemonicParsing="false" onAction="#moveUpTask" text="Up">
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button fx:id="downBtn" mnemonicParsing="false" onAction="#moveDownTask" text="Down">
+                     <HBox.margin>
+                        <Insets left="10.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#viewShiftBoards" text="Visualizza Tabellone dei Turni">
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+                  <Button mnemonicParsing="false" onAction="#goBack" text="Esci">
+                     <HBox.margin>
+                        <Insets left="25.0" top="10.0" />
+                     </HBox.margin>
+                  </Button>
+               </children>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
+            </HBox>
+         </children>
+         <BorderPane.margin>
+            <Insets top="10.0" />
+         </BorderPane.margin>
+      </VBox>
+   </bottom>
+   <top>
+      <ScrollPane prefHeight="390.0" prefWidth="600.0" BorderPane.alignment="CENTER">
+         <content>
+            <ListView fx:id="taskList" onMouseClicked="#viewSelectedTask" prefHeight="375.0" prefWidth="1079.0" />
+         </content>
+         <BorderPane.margin>
+            <Insets bottom="20.0" />
+         </BorderPane.margin>
+      </ScrollPane>
+   </top>
+</BorderPane>
