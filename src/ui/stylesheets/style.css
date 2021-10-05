@@ -53,7 +53,7 @@
     -fx-text-fill: #FFFFFF;
 }
 
-.tree-cell:hover, .tree-cell:pressed {
+.tree-cell:hover, .tree-cell:pressed, .tree-cell:selected {
     -fx-background-color: #FFFFFF;
     -fx-text-fill: #3a3a3a;
 }
@@ -67,7 +67,7 @@
     -fx-text-fill: #FFFFFF;
 }
 
-.list-cell:hover, .list-cell:pressed {
+.list-cell:hover, .list-cell:pressed, .list-cell:selected {
     -fx-background-color: #FFFFFF;
     -fx-text-fill: #3a3a3a;
 }
@@ -131,7 +131,7 @@
 
 .table-view .column-header,
 .table-view .column-header-background .filler {
-    -fx-background-color:  linear-gradient(#131313 0%, #424141 100%);
+    -fx-background-color: #3a3a3a;
 }
 
 .table-view .column-header .label {
